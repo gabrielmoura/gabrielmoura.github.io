@@ -3,12 +3,22 @@
 @import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic|Montserrat:400,700|Cardo:400italic|Advent+Pro:100&display=swap);
 
 @charset "UTF-8";
+:root {
+    --color-1: #DFDFDF;
+    --color-2: #FFFFFF;
+    --color-3: #6990c4;
+    ---font-family-1: 'Quattrocento Sans', sans-serif;
+    ---font-family-2: 'Montserrat', serif;
+    ---font-family-3: 'Advent Pro', sans-serif;
+    ---font-family-4: 'Cardo', serif;
+    ---font-awesome: 'FontAwesome';
+}
 
 /* --- GENERAL STYLES --- */
 body {
     font-size: 16px;
     line-height: 1.5em;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: var(---font-family-1);
 }
 
 h1,
@@ -17,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', serif;
+    font-family: var(---font-family-2);
     font-weight: 700;
     color: #1a1a1a;
 }
@@ -38,12 +48,12 @@ h6 {
 .content-section h1:after {
     content: '';
     display: block;
-    border-bottom: 1px solid #DFDFDF;
+    border-bottom: 1px solid var(--color-1);
     padding-top: 3px;
 }
 
 .content-section p.lead {
-    font-family: 'Cardo', serif;
+    font-family: var(---font-family-4);
     font-size: 19px;
     line-height: 1.35em;
     margin-bottom: 25px;
@@ -62,7 +72,7 @@ h6 {
 }
 
 .content-section img.pull-right {
-    border: 1px solid #DFDFDF;
+    border: 1px solid var(--color-1);
     margin-top: 140px;
 }
 
@@ -116,9 +126,9 @@ h6 {
 
 /* --- NAVBAR --- */
 .navbar-default {
-    font-family: 'Montserrat', serif;
-    background: #FFFFFF;
-    border-bottom-color: #DFDFDF;
+    font-family: var(---font-family-2);
+    background: var(--color-2);
+    border-bottom-color: var(--color-1);
     height: 60px;
     margin-bottom: 0;
 }
@@ -143,26 +153,26 @@ h6 {
 }
 
 .navbar-default .navbar-nav {
-    background: #FFF;
+    background: var(--color-2);
     margin-top: 0;
 }
 
 .navbar-default .navbar-nav > li > a {
     color: #222;
     padding: 10px;
-    border-bottom: 1px solid #DFDFDF;
+    border-bottom: 1px solid var(--color-1);
 }
 
 .navbar-default .navbar-nav > li > a.selected {
-    color: #E64B36;
+    color: var(--color-3);
 }
 
 .navbar-default a.navbar-brand:hover .navbar-default .navbar-nav > li > a:hover {
-    background-color: #DFDFDF;
+    background-color: var(--color-1);
 }
 
 .navbar-default .navbar-brand:hover {
-    color: #E64B36;
+    color: var(--color-3);
 }
 
 @media screen and (min-width: 768px) {
@@ -186,7 +196,7 @@ h6 {
 
     .navbar-default .navbar-nav > li > a:hover {
         background-color: transparent;
-        color: #E64B36;
+        color: var(--color-3);
     }
 }
 
@@ -215,7 +225,7 @@ h6 {
 }
 
 #home h1 {
-    font-family: 'Advent Pro', sans-serif;
+    font-family: var(---font-family-3);
     font-size: 96px;
     color: #000;
     display: inline-block;
@@ -306,9 +316,9 @@ a:link, .thumbnail a:link, .thumbnail a:hover {
 }
 
 .content-section .thumbnail:after {
-    font-family: 'FontAwesome';
+    font-family: var(---font-awesome);
     content: '\f121';
-    color: #FFF;
+    color: var(--color-2);
     font-size: 48px;
     line-height: 80px;
     top: 70%;
@@ -332,9 +342,9 @@ a:link, .thumbnail a:link, .thumbnail a:hover {
 .content-section .thumbnail:hover:after {
     top: 25%;
     opacity: 1;
-    color: #FFFFFF;
-    background: #AF6204;
-    border: 3px solid #FFFFFF;
+    color: var(--color-2);
+    background: var(--color-3);
+    border: 3px solid var(--color-2);
 }
 
 /* --- CONTACT --- */
@@ -355,7 +365,7 @@ a.btn-default {
     text-align: left;
     margin: 0 5px 10px 0;
     position: relative;
-    background-color: #FFFFFF;
+    background-color: var(--color-2);
     padding: 10px;
     transition: all .35s;
     /*padding: 0;*/
@@ -370,7 +380,7 @@ a.btn-default i {
     left: 12px;
     top: 10px;
     font-size: 24px;
-    color: #FFFFFF;
+    color: var(--color-2);
     /*position: relative;*/
     z-index: 1;
 }
@@ -412,8 +422,8 @@ a.fcc-btn:after {
 
 a.btn-default:hover,
 a.btn-default:focus {
-    background-color: #FFFFFF;
-    color: #FFFFFF;
+    background-color: var(--color-2);
+    color: var(--color-2);
 }
 
 a.btn-default:hover:after {
