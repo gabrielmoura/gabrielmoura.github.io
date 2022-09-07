@@ -226,11 +226,11 @@ h6 {
 
 #home h1 {
     font-family: var(---font-family-3);
-    font-size: 96px;
+    font-size: 35px;
     color: #000;
     display: inline-block;
     margin: 60px 0 0 0;
-    padding: 0;
+    padding: 30PX;
     line-height: 90px;
     /*margin-top: 60px;*/
 }
